@@ -43,7 +43,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
 
     public void initView() {
         //1. 添加用户名文字
-        JLabel usernameText = new JLabel(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\用户名.png"));
+        JLabel usernameText = new JLabel(new ImageIcon("image/login/用户名.png"));
         usernameText.setBounds(116, 135, 47, 17);
         this.getContentPane().add(usernameText);
 
@@ -53,7 +53,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
         this.getContentPane().add(username);
 
         //3.添加密码文字
-        JLabel passwordText = new JLabel(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\密码.png"));
+        JLabel passwordText = new JLabel(new ImageIcon("image/login/密码.png"));
         passwordText.setBounds(130, 195, 32, 16);
         this.getContentPane().add(passwordText);
 
@@ -63,7 +63,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
 
 
         //验证码提示
-        JLabel codeText = new JLabel(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\验证码.png"));
+        JLabel codeText = new JLabel(new ImageIcon("image/login/验证码.png"));
         codeText.setBounds(133, 256, 50, 30);
         this.getContentPane().add(codeText);
 
@@ -84,7 +84,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
 
         //5.添加登录按钮
         login.setBounds(123, 310, 128, 47);
-        login.setIcon(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\登录按钮.png"));
+        login.setIcon(new ImageIcon("image/login/登录按钮.png"));
         //去除按钮的边框
         login.setBorderPainted(false);
         //去除按钮的背景
@@ -95,7 +95,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
 
         //6.添加注册按钮
         register.setBounds(256, 310, 128, 47);
-        register.setIcon(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\注册按钮.png"));
+        register.setIcon(new ImageIcon("image/login/注册按钮.png"));
         //去除按钮的边框
         register.setBorderPainted(false);
         //去除按钮的背景
@@ -106,7 +106,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
 
 
         //7.添加背景图片
-        JLabel background = new JLabel(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\background.png"));
+        JLabel background = new JLabel(new ImageIcon("image/login/background.png"));
         background.setBounds(0, 0, 470, 390);
         this.getContentPane().add(background);
 
@@ -199,9 +199,9 @@ public class LoginJFrame extends JFrame implements MouseListener {
     @Override
     public void mousePressed(MouseEvent e) {
         if (e.getSource() == login) {
-            login.setIcon(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\登录按下.png"));
+            login.setIcon(new ImageIcon("image/login/登录按下.png"));
         } else if (e.getSource() == register) {
-            register.setIcon(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\注册按下.png"));
+            register.setIcon(new ImageIcon("image/login/注册按下.png.png"));
         }
     }
 
@@ -210,9 +210,8 @@ public class LoginJFrame extends JFrame implements MouseListener {
     @Override
     public void mouseReleased(MouseEvent e) {
         if (e.getSource() == login) {
-            login.setIcon(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\登录按钮.png"));
         } else if (e.getSource() == register) {
-            register.setIcon(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\login\\注册按钮.png"));
+            register.setIcon(new ImageIcon("image/login/注册按钮.png"));
         }
     }
 

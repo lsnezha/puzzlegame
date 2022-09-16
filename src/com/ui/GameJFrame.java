@@ -18,7 +18,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
     int y = 0;
 
     //定义变量，记录当前展示图片的路径
-    String path = "E:\\\\cs\\\\Java\\\\puzzlegame\\\\image\\\\girl\\\\girl1";
+    String path = "G:\\cs\\Java\\puzzlegame\\image\\girl\\girl1";
 
     int [][] win = {
             {1, 2, 3, 4},
@@ -100,7 +100,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
 
         if(victory()){
             //显示胜利图标
-            JLabel winJLabel = new JLabel(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\win.png"));
+            JLabel winJLabel = new JLabel(new ImageIcon("G:\\cs\\Java\\puzzlegame\\image\\win.png"));
             winJLabel.setBounds(203, 283, 197, 73);
             this.getContentPane().add(winJLabel);
         }
@@ -128,7 +128,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         }
 
         //先加载的图片在上方，后加载的图片在下方
-        ImageIcon bg = new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\background.png");
+        ImageIcon bg = new ImageIcon("G:\\cs\\Java\\puzzlegame\\image\\background.png");
         JLabel background = new JLabel(bg);
         background.setBounds(40, 40, 508, 560);
         this.getContentPane().add(background);
@@ -202,7 +202,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             all.setBounds(83, 134, 420, 420);
             this.getContentPane().add(all);
             //加载背景图片
-            ImageIcon bg = new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\background.png");
+            ImageIcon bg = new ImageIcon("G:\\cs\\Java\\puzzlegame\\image\\background.png");
             JLabel background = new JLabel(bg);
             background.setBounds(40, 40, 508, 560);
             this.getContentPane().add(background);
@@ -330,7 +330,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             //创建一个弹窗对象
             JDialog jDialog = new JDialog();
             //创建一个管理图片的容器对象
-            JLabel jLabel = new JLabel(new ImageIcon("E:\\cs\\Java\\puzzlegame\\image\\about.png"));
+            JLabel jLabel = new JLabel(new ImageIcon("G:\\cs\\Java\\puzzlegame\\image\\about.png"));
             //设置位置和宽高
             jLabel.setBounds(0, 0, 258, 258);
             //把图片添加到弹框中
